@@ -25,4 +25,7 @@ public class Shooter extends Subsystem {
 	public void stopShooter(){
 		RobotMap.shooterMotor.set(0);
 	}
+	public void reverseShooter(){
+		RobotMap.shooterMotor.set(1);
+	}
 }
