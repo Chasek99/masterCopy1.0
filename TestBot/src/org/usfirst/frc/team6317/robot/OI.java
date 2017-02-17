@@ -16,10 +16,11 @@ public class OI {
 	Button midLeft = new JoystickButton(leftStick, 5);
 	
 	public OI(){
-		leftTrigger.whenPressed(new KickCommand());
-		rightTrigger.whenPressed(new ShooterCommand());
-		topLeft.whenPressed(new IntakeCommand(1));
-		topRight.whenPressed(new IntakeCommand(2));
-		midLeft.whenPressed(new IntakeCommand(0));
+		leftTrigger.whenPressed(new KickCommand());//this makes the balls go into the shooter
+		rightTrigger.whenPressed(new ShooterCommand());//this shoots the balls
+		topLeft.whenPressed(new IntakeCommand(1));//this brings balls into the lower intake
+		topRight.whenPressed(new IntakeCommand(2));//this brings balls up into the bin
+		midLeft.whenPressed(new IntakeCommand(0));//this shuts the ball intake off
+		//buttonunknown.whenPressed(new DriveToDistance(0.11));
 	}
 }
